@@ -1,0 +1,17 @@
+@keyframes tile_animation {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .6;
+    }
+
+    70% {
+        opacity: .3;
+    }
+}
+
+.tile_animate {
+    animation: tile_animation 3s linear infinite;
+}

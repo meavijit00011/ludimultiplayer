@@ -1,0 +1,29 @@
+.home_container {
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.start_btn {
+    background-color: var(--orange);
+}
+
+.home_container button {
+    margin: 10px;
+}
+
+.online_btn {
+    background-color: var(--green);
+}
+
+.offline_btn {
+    background-color: var(--red);
+}
+
+.home_container span {
+    color: white;
+}

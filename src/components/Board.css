@@ -1,0 +1,32 @@
+.board_container {
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.back_btn {
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: auto;
+    display: block;
+    font-size: 11px;
+}
+
+.dice_section {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.row {
+    display: flex;
+}
+
+.tile_container {
+    background-color: white;
+    position: relative;
+}
