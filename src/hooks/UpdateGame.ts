@@ -51,8 +51,8 @@ export default function useUpdateGame() {
                     const updatedGame = new Game(updatedPos, diceNum, newUpdatedPlayer, CanMove, false, gameFinished, tempPlayerFinishedOrder, quitGame, 'allowed');
                     setGame(updatedGame);
                 }
-                // if the dice number was 6 of the player has cut piece of other player then curr player get extra one move.
-                else if (hasCutAnotherPiece || (diceNum[activePlayer] == 6 && !playerHasFinished) || (hasPieceFinished && !playerHasFinished)) {
+                // if the dice number was 6 or the player has cut piece of other player then curr player get extra one move.
+                else if (hasCutAnotherPiece || (diceNum[activePlayer] == 6 && !playerHasFinished && hasMoved) || (hasPieceFinished && !playerHasFinished)) {
                     const updatedGame = new Game(updatedPos, diceNum, activePlayer, CanMove, false, false, playerFinishedOrder, quitGame, 'allowed');
                     setGame(updatedGame);
                 }
